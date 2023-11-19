@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    *{
+        font-size: larger;
+    }
+    h3{
+        font-size:xx-large;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    img{
+        height: 300px;
+        width: 450px;
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+    div{
+        height: 80px;
+        width: 600px;
+        background-color: rgb(206, 200, 200);
+    }
+</style>
+<body>
+    
+    <nav>
+        <label class="logo"> WEB BEGINNER</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="dbms.html">DBMS</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav><br><br><br><br><br><br><br><br><br><br><br>
+
+<body style="margin-left: 10px;">
+   <b><p>NOT NULL:</p></b> This constraint tells that we cannot store a null value in a column. That is, if a column is specified as NOT NULL then we will not be able to store null in this particular column any more.
+   <br><br><b><p style="font-size: large;"> Syntax:</p></b>
+   CREATE TABLE sample_table
+   (
+   column1 data_type(size) constraint_name,
+   column2 data_type(size) constraint_name,
+   column3 data_type(size) constraint_name,
+    ....
+);<br><br>
+<b><p style="font-size: large;"> Example:</p></b>
+<img src="../Screenshot (1).png" height="200" width="200">
+<b><p>UNIQUE:</p></b> This constraint when specified with a column, tells that all the values in the column must be unique. That is, the values in any row of a column must not be repeated.<br>
+<br><b><p style="font-size: large;"> Syntax:</p></b>
+CREATE TABLE sample_table
+(
+column1 data_type(size) constraint_name,
+column2 data_type(size) constraint_name,
+column3 data_type(size) constraint_name,
+....
+);<br><br><b><p style="font-size: large;"> Example:</p></b>
+<img src="../Screenshot (14).png" height="200" width="200">
+<b><p>PRIMARY KEY:</p></b> A primary key is a field which can uniquely identify each row in a table. And this constraint is used to specify a field in a table as primary key.<br>
+<br><b><p style="font-size: large;"> Syntax:</p></b>
+CREATE TABLE sample_table
+(
+column1 data_type(size) constraint_name,
+column2 data_type(size) constraint_name,
+column3 data_type(size) constraint_name,
+....
+);<br><br><b><p style="font-size: large;"> Example:</p></b>
+<img src="../Screenshot (15).png" height="200" width="200">
+<b><p>FOREIGN KEY:</p></b> A Foreign key is a field which can uniquely identify each row in a another table. And this constraint is used to specify a field as Foreign key.<br>
+<br><b><p style="font-size: large;"> Syntax:</p></b>
+CREATE TABLE sample_table
+(
+column1 data_type(size) constraint_name,
+column2 data_type(size) constraint_name,
+column3 data_type(size) constraint_name,
+....
+);<br><br><b><p style="font-size: large;"> Example:</p></b>
+<img src="../Screenshot (16).png" height="200" width="200">
+<b><p>CHECK:</p></b> This constraint helps to validate the values of a column to meet a particular condition. That is, it helps to ensure that the value stored in a column meets a specific condition.
+<br><br><b><p style="font-size: large;"> Syntax:</p></b>
+CREATE TABLE sample_table
+(
+column1 data_type(size) constraint_name,
+column2 data_type(size) foreign key references sample_table2(primary column),...
+); <br><br><b><p style="font-size: large;"> Example:</p></b>
+<img src="../Screenshot (17).png" height="200" width="200">
+<b><p>DEFAULT:</p></b> This constraint specifies a default value for the column when no value is specified by the user.
+<br><br><b><p style="font-size: large;"> Syntax:</p></b>
+CREATE TABLE sample_table
+(
+column1 data_type(size) constraint_name,
+column2 data_type(size) constraint_name,
+column3 data_type(size) constraint_name,
+....
+);  <br><br><b><p style="font-size: large;"> Example:</p></b>
+<img src="../Screenshot (18).png" height="200" width="200">
+</body>
+</html>

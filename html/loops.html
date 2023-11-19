@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head><link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+        font-size: larger;
+    }
+    h3{
+        font-size:xx-large;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    img{
+        height: 300px;
+        width: 450px;
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+    div{
+        height: 80px;
+        width: 600px;
+        background-color: rgb(206, 200, 200);
+    }
+</style>
+<body>
+    
+    <nav>
+        <label class="logo"> WEB BEGINNER</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="dbms.html">DBMS</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav><br><br><br><br><br><br><br><br><br><br><br>
+
+<body style="margin-left: 10px;">
+<body><br>
+    <p style="font-size: 30px;"><b>Iterative statements:</b></p><br>
+    Loops in PL/SQL provides a way of repeating a particular part of any program or any code statement as many times as required. <br>
+    In PL/SQL we have three different loop options to choose from when we want to execute a statement repeatedly in our code block. They are: <br>
+    1.Basic Loop <br>
+    2.While Loop <br>
+    3.For Loop <br><br>
+   <h3>PL/SQL Basic Loop</h3>
+Basic loop or simple loop is preferred in PL/SQL code when there is no surety about how many times the block of code is to be repeated. When we use the basic loop the code block will be executed at least once. <br>
+<b><p style="font-size: large;"> Syntax:</p></b>
+LOOP <br>
+	sequence of statements <br>
+END LOOP; 
+<br><br><b><p style="font-size: large;"> Example:</p></b> <br>
+DECLARE <br>
+	i int; <br>
+BEGIN <br>
+	i := 1; <br>
+	LOOP <br>
+		if i>10 then <br>
+			exit; <br>
+		end if; <br>
+		dbms_output.put_line(i); <br>
+		i := i+1;<br>
+	END LOOP;<br>
+END; <br><br>
+Output: <br><img src="../Screenshot (24).png" alt="">
+<h3>PL/SQL While Loop</h3>
+It is an entry controlled loop which means that before entering in a while loop first the condition is tested, if the condition is TRUE the statement or a group of statements get executed and if the condition is FALSE the control will move out of the while loop. <br>
+<b><p style="font-size: large;"> Syntax:</p></b>
+WHILE test_condition LOOP <br>
+	action <br>
+END LOOP;  <br><br><b><p style="font-size: large;"> Example:</p></b><br> DECLARE <br>
+num int:=1; <br>
+BEGIN <br>
+while(num = 10) LOOP <br>
+    dbms_output.put_line(''|| no); <br>
+    num := num+2; <br>
+END LOOP; <br>
+END; <br><br>
+Output: <br><img src="../Screenshot (25).png" alt="">
+<h3>PL/SQL: For Loop</h3>
+This loop is used when some statements in PL/SQL code block are to be repeated for a fixed number of times.<br>
+<b><p style="font-size: large;"> Syntax:</p></b>
+
+FOR counter_variable IN start_value..end_value LOOP <br>
+	statement to be executed <br>
+END LOOP; 
+<br><br><b><p style="font-size: large;"> Example:</p></b><br>
+DECLARE <br>
+	i number(2); <br>
+BEGIN <br>
+	FOR i IN 1..10 LOOP <br>
+		dbms_output.put_line(i); <br>
+	END LOOP; <br>
+END; <br>
+Output: <br><img src="../Screenshot (23).png" alt=""> <br><br>
+<p style="font-size: 30px;"><b>Conditional statements:</b></p><br>
+Decision making statements are those statements which are in charge of executing a statement out of multiple given statements based on some condition. The condition will return either true or false.
+This can be logically implemented in PL/SQL block using decision making statements. <br><br>
+
+The decision making statements in PL/SQL are of two types: <br>
+
+1.If Else statements <br>
+2.Case statement <br>
+PL/SQL: if Statement <br>
+Syntax: <br>
+
+if (test_condition) then <br>
+	body of action <br>
+end if; <br> 
+Example: <br>DECLARE <br>
+x int:=10; <br>
+y int:=80; <br>
+BEGIN <br>
+if(y>x) then <br>
+    dbms_output.put_line('Result: ' ||y|| ' is greater than ' ||x); <br>
+end if; <br>
+end; <br>
+Output: <br><img src="../Screenshot 2023-04-12 115548.png" alt=""> <br><br>
+PL/SQL: if...then...else statement <br><br>
+Syntax:
+
+if (test_condition) then <br>
+	statement 1/set of statements 1<br>
+else<br>
+	statement 2/set of statements 2<br>
+end if;<br>
+Example: <br>
+DECLARE<br>
+	x int;<br>
+BEGIN<br>
+	x := 4;<br>
+	if mod(x,2) = 0 then<br>
+		dbms_output.put_line('Even Number');<br>
+	else<br>
+		dbms_output.put_line('Odd Number');<br>
+	end if;<br>
+end; <br>
+Example: <br>
+<img src="../Screenshot 2023-04-12 120618.png" alt="">
+<br><br>
+PL/SQL: if...then...elsif...else statement <br>
+Syntax:<br><br>
+
+if (test_condition1) then<br>
+	body of action<br>
+elsif (test_condition2)then<br>
+	body of action<br>
+elsif(test_condition3)then<br>
+	body of action<br>
+...<br>
+...<br>
+else<br>
+	body of action<br>
+end if; <br><br> 
+Example: <br>
+DECLARE<br>
+	a int;<br>
+	b int;<br>
+BEGIN<br>
+	a := 10;<br>
+	b := 3;<br>
+	if(a>b) then<br>
+		dbms_output.put_line('a is greater than b');<br>
+	elsif(b>a) then<br>
+		dbms_output.put_line('b is greater than a');<br>
+	else<br>
+		dbms_output.put_line('Both a and b are equal');<br>
+	end if;<br>
+end; <br>
+Output: <br> <img src="../Screenshot 2023-04-12 121724.png" alt="">
+
+</body>
+</html>

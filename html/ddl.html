@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+            font-size: larger;
+        }
+        h3{
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        img{
+            height: 300px;
+            width: 450px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        div{
+            height: 80px;
+            width: 600px;
+            background-color: rgb(206, 200, 200);
+        }
+    </style>
+    <body>
+        
+        <nav>
+            <label class="logo"> WEB BEGINNER</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="dbms.html">DBMS</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><br><br><br><br><br><br><br><br><br><br><br>
+<body style="margin-left: 10px;">
+    <h5>DDL Command</h5>
+    <h6>CREATE</h6>
+    SQL create the database or its object(ie table,view,etc). <br>
+    Syntax <br>
+    <div> create database databasename;</div>
+    Example <br>
+    <div>create database emp;</div>
+  <br>
+    <b><p>Example:</p></b>
+    <img src="../Screenshot (1).png" height="200" width="200">
+    Syntax <br>
+    <div> create table tablename(colname datatype,colname datatype,...);</div>
+    Example <br>
+    <div>create table orders(order_num int,orderdate int,status varchar(255));</div>
+    <b><p>Example:</p></b>
+    <img src="../Screenshot (2).png" height="200" width="200">
+    <h6>ALTER Command</h6>
+    Alter command is helpful to change or modify the structure of the table. <br>
+    Syntax <br>
+    <div>alter table tablename add colname datatype;</div>
+    Example
+   <div> alter table orders add comments varchar(255);</div>
+   <b><p>Example:</p></b>
+   <img src="../Screenshot (3).png" height="200" width="200">
+   Syntax
+    <div> alter table tablename drop column colname;</div>
+    Example
+   <div> alter table orders drop column status;</div>
+   <b><p>Example:</p></b>
+<img src="../Screenshot (6).png" height="200" width="200">
+    <h6>DROP Command</h6>
+    Drop command helps to delete the object from the database. <br>
+    Syntax
+    <div> drop table tablename;</div>
+    Example
+   <div> drop table orders;</div>   
+   <b><p>Example:</p></b>
+<img src="../Screenshot (7).png" height="200" width="200"> <h6>TRUNCATE Command</h6>
+    SQL Truncate command helps to remove all records from a table. <br>
+    Syntax
+    <div> truncate table tablename;</div>
+    Example
+    <div>truncate table orders;</div>
+    <b><p>Example:</p></b>
+<img src="../Screenshot (8).png" height="200" width="200">
+</body>

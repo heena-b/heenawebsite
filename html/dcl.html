@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+            font-size: larger;
+        }
+        h3{
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        img{
+            height: 300px;
+            width: 450px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        div{
+            height: 80px;
+            width: 600px;
+            background-color: rgb(206, 200, 200);
+        }
+    </style>
+    <body style="margin-left: 10px;">
+        
+        <nav>
+            <label class="logo"> WEB BEGINNER</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="dbms.html">DBMS</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><br><br><br><br><br><br><br><br><br><br><br><body>
+        <h5>DCL Command</h5>
+        <h6>GRANT Command</h6>
+        GRANT command is helpful to provide priveleges to the database. <br>
+        Syntax
+       <div>grant priveleges_names on object to user;</div>
+        Example
+        <div>grant select,insert,delete on users to 'name'@'localhost;</div>
+        <h6>REVOKE Command</h6>
+        SQL revoke command is to withdraw the user's access priveleges given by using the GRANT command. <br>
+        Syntax
+        <div>revoke priveleges on object from user;</div>
+        Example
+        <div>revoke select,insert,delete on users to 'name'@'localhost;</div>
+        
+    </body>

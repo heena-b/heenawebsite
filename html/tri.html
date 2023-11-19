@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+            font-size: larger;
+        }
+        h3{
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        img{
+            height: 300px;
+            width: 450px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        div{
+            height: 80px;
+            width: 600px;
+            background-color: rgb(206, 200, 200);
+        }
+    </style>
+    <body>
+        
+        <nav>
+            <label class="logo"> WEB BEGINNER</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="dbms.html">DBMS</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><br><br><br><br><br><br><br><br><br><br><br>
+    
+<body style="margin-left: 10px;">
+    <p style="font-size: 30px;"><b>Triggers in PLSQL:</b></p><br><br><br>
+    A stored program that is fired by default or by some events is called a trigger.
+     A trigger is executed due to the following circumstances listed below:<br><br>
+    
+    -by a DDL (Data Definition Language) statement like DROP, ALTER, or CREATE. <br>
+    -by a DML (Data Manipulation Language) statement like UPDATE, INSERT, or DELETE. <br>
+    -by a database action like SHUTDOWN, STARTUP, LOGOFF, and LOGON. <br><br>
+    
+   <h3> Types Of Triggers In PL/SQL</h3> <br><br>
+    The triggers can be categorized based on parameters. Types of triggers are listed below: <br>
+    
+    1) Categorization on the trigger level. <br><br>
+    ROW Level trigger: It gets executed for each record that got updated by a DML statement. <br>
+    STATEMENT Level trigger: It gets executed only once by the event statement. <br><br>
+    2) Categorization of the trigger timing. <br><br>
+    BEFORE trigger: It gets executed prior to the specific event that has taken place. <br><br>
+    AFTER trigger: It gets executed post the specific event that has taken place. <br><br>
+    INSTEAD OF trigger: It is a special type of trigger and it gets executed for each record that got updated by a DML statement. <br><br>
+    3) Categorization of the trigger event. <br><br>
+    DML trigger: It gets executed if a DML event like an UPDATE, INSERT, or DELETE is performed. <br><br>
+    DDL trigger: It gets executed if a DDL event like a DROP, ALTER, or CREATE is performed. <br><br>
+    DATABASE trigger: It gets executed if a database event like SHUTDOWN, STARTUP, LOGOFF, and LOGON has taken place. <br><br>
+    Create Triggers <br><br>
+    The syntax for creating a trigger: <br><br>
+    
+    CREATE [OR REPLACE ] TRIGGER trigger_n <br> 
+    {BEFORE | AFTER | INSTEAD OF }  <br>
+    {INSERT [OR] | UPDATE [OR] | DELETE} <br>  
+    [OF column_n]  <br>
+    ON table_n  <br>
+    [REFERENCING OLD AS o NEW AS n]  <br>
+    [FOR EACH ROW]  <br>
+    WHEN (condition)   <br>
+    DECLARE <br>
+         Declaration statement <br> 
+    BEGIN <br>
+        Block of executable code <br>
+    EXCEPTION <br>
+        Exception handling if any <br> 
+    END; <br><br>
+    Example: <br><br>
+    <img src="../Screenshot 2023-04-11 204952.png" alt="" ><br>
+<body>
+    
+</body>
+</html>

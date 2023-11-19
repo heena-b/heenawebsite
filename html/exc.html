@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+            font-size: larger;
+        }
+        h3{
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        img{
+            height: 300px;
+            width: 450px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        div{
+            height: 80px;
+            width: 600px;
+            background-color: rgb(206, 200, 200);
+        }
+    </style>
+    <body>
+        
+        <nav>
+            <label class="logo"> WEB BEGINNER</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="dbms.html">DBMS</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><br><br><br><br><br><br><br><br><br><br><br>
+    
+<body style="margin-left: 10px;">
+
+<body>
+   <p style="font-size: 30px;"><b>Exception handling:</b></p><br>
+    An exception is an error condition during a program execution. PL/SQL supports programmers to catch such conditions using EXCEPTION block in the program and an appropriate action is taken against the error condition. There are two types of exceptions: <br><br>
+
+1.Pre-defined exceptions <br>
+2.User-defined exceptions <br>
+<br>
+<h3>Pre-defined Exceptions</h3><br>
+PL/SQL provides many pre-defined exceptions, which are executed when any database rule is violated by a program. <br><br>
+<h3>User-defined Exceptions</h3><br>
+PL/SQL allows you to define your own exceptions according to the need of your program. A user-defined exception must be declared and then raised explicitly, using either a RAISE statement or the procedure DBMS_STANDARD.RAISE_APPLICATION_ERROR. <br><br>
+<b><p style="font-size: large;"> Syntax:</p></b><br>
+DECLARE <br>
+   declarations section <br>
+BEGIN <br>
+   executable commands <br>
+EXCEPTION <br>
+   exception handling goes here <br> 
+   WHEN exception1 THEN  <br>
+      exception1-handling-statements <br> 
+   WHEN exception2  THEN  <br>
+      exception2-handling-statements <br> 
+   WHEN exception3 THEN  <br>
+      exception3-handling-statements <br>
+   ........ 
+   WHEN others THEN <br>
+      exception3-handling-statements <br>
+END; <br> <br>
+<b><p style="font-size: large;"> Example:</p></b>
+DECLARE <br>
+   exp exception; <br>
+   pragma exception_init (exp, -20015); <br>
+   n int:=10; <br>
+  
+BEGIN <br>
+   FOR i IN 1..n LOOP <br>
+      dbms_output.put_line(i*i); <br>
+         IF i*i=36 THEN <br>
+            RAISE exp; <br>
+         END IF; <br>
+   END LOOP; <br>
+  
+EXCEPTION <br>
+   WHEN exp THEN <br>
+      dbms_output.put_line('Welcome'); <br>
+    END; <br>
+<b><p style="font-size: large;"> Output:</p></b>
+<img src="../Screenshot (26).png" alt="">
+
+</body>
+</html>

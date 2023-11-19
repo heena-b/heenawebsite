@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+            font-size: larger;
+        }
+        h3{
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        img{
+            height: 300px;
+            width: 450px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        div{
+            height: 80px;
+            width: 600px;
+            background-color: rgb(206, 200, 200);
+        }
+    </style>
+    <body>
+        
+        <nav>
+            <label class="logo"> WEB BEGINNER</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="dbms.html">DBMS</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><br><br><br><br><br><br><br><br><br><br><br>
+    
+<body style="margin-left: 10px;">
+
+<body>
+    <h3>Procedures:</h3><br>
+    A Procedure in PL/SQL is a subprogram unit that consists of a group of PL/SQL statements that can be called by name. Each procedure in PL/SQL has its own unique name by which it can be referred to and called. This subprogram unit in the Oracle database is stored as a database object. <br><br>
+
+Below are the characteristics of Procedure subprogram unit in PL/SQL: <br>
+
+1.Procedures are standalone blocks of a program that can be stored in the database. <br>
+2.Call to these PLSQL procedures can be made by referring to their name, to execute the PL/SQL statements. <br>
+3.It is mainly used to execute a process in PL/SQL. <br>
+4.It can have nested blocks, or it can be defined and nested inside the other blocks or packages. <br>
+5.It contains declaration part (optional), execution part, exception handling part (optional). <br><br>
+The values can be passed into Oracle procedure or fetched from the procedure through parameters.
+These parameters should be included in the calling statement. <br> <br>
+A Procedure in SQL can have a RETURN statement to return the control to the calling block, but it cannot return any values through the RETURN statement.
+Procedures cannot be called directly from SELECT statements. They can be called from another block or through EXEC keyword. <br><br>
+Syntax: <br>
+CREATE OR REPLACE PROCEDURE  <br>
+procedure_name <br>
+	( <br>
+	parameterl IN/OUT datatype <br>
+	.. <br>
+	. <br>
+	) <br>
+[ IS | AS ] <br>
+	declaration_part <br>
+BEGIN
+	execution part <br>
+EXCEPTION <br>
+	exception handling part <br>
+END; <br><br>
+<br>
+<b><p style="font-size: large;"> Example:</p></b>
+<br>
+<img src="../Screenshot 2023-04-12 123604.png" alt="">
+<h3>Functions:</h3><br>
+Functions is a standalone PL/SQL subprogram. Like PL/SQL procedure, functions have a unique name by which it can be referred. These are stored as PL/SQL database objects. Below are some of the characteristics of functions: <br><br>
+
+1.Functions are a standalone block that is mainly used for calculation purpose. <br>
+2.Function use RETURN keyword to return the value, and the datatype of this is defined at the time of creation. <br>
+3.A Function should either return a value or raise the exception, i.e. return is mandatory in functions. <br>
+4.Function with no DML statements can be directly called in SELECT query whereas the function with DML operation can only be called from other PL/SQL blocks. <br>
+5.It can have nested blocks, or it can be defined and nested inside the other blocks or packages. <br>
+6.It contains declaration part (optional), execution part, exception handling part (optional). <br>
+7.The values can be passed into the function or fetched from the procedure through the parameters.These parameters should be included in the calling statement. <br>
+8.A PL/SQL function can also return the value through OUT parameters other than using RETURN.
+Since it will always return the value, in calling statement it always accompanies with assignment operator to populate the variables.
+<br><br>
+Syntax: <br>
+CREATE OR REPLACE FUNCTION <br> 
+procedure_name <br>
+( <br>
+parameterl IN/OUT datatype <br>
+) <br>
+RETURN datatype <br>
+[ IS | AS ] <br>
+declaration_part <br>
+BEGIN <br>
+execution part <br> 
+EXCEPTION <br>
+exception handling part <br>
+END; <br>
+<br>
+<b><p style="font-size: large;"> Example:</p></b>
+<br>
+<img src="../Screenshot 2023-04-12 124111.png" alt="">
+    
+</body>
+</html>

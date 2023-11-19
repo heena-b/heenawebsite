@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+            font-size: larger;
+        }
+        h3{
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        img{
+            height: 300px;
+            width: 450px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        div{
+            height: 80px;
+            width: 600px;
+            background-color: rgb(206, 200, 200);
+        }
+    </style>
+    <body>
+        
+        <nav>
+            <label class="logo"> WEB BEGINNER</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="dbms.html">DBMS</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><br><br><br><br><br><br><br><br><br><br><br>
+    
+<body style="margin-left: 10px;">
+
+<body>
+   <p><b><center> PL/SQL Data Types,Variables and Constants:</center></b></p><br>
+   <h2>PL/SQL Data Types</h2>
+   PL/SQL has two kinds of data types: scalar and composite.<br> The scalar types are types that store single values such as number, Boolean, character, and datetime whereas the composite types are types that store multiple values, for example, record and collection. <br>
+   PL/SQL divides the scalar data types into four families: <br>
+   Number-Numeric values on which arithmetic operations are performed. <br>
+   Boolean-Logical values on which logical operations are performed. <br>
+   Character-Alphanumeric values that represent single characters or strings of characters. <br>
+   Datetime-Dates and times. <br><br>
+   <h2>Variable</h2>
+    A variable is a reserved memory area for storing the data of a particular datatype. <br>
+    Rules for declaring a Variable in PL/SQL: <br>
+1. A variable name is user-defined. It should begin with a character and can be followed by maximum of 29 characters. <br>
+2. Keywords (i.e, reserved words ) of PL/SQL cannot be used as variable name. <br>
+3. Multiple variables can be declared in a single line provided they must be separated from each other by at least one space and comma.<br>
+4. Variable names containing two words should not contain space between them. It must be covered by underscore instead. <br>
+5. A variable name is case sensitive, which means a_var is not same as A_var <br> <br>
+<b><p style="font-size: large;"> Syntax:</p></b>
+Variable_name  datatype(size);<br>
+<br><b><p style="font-size: large;"> Example:</p></b>
+roll_no NUMBER(2); <br>
+a int; <br><br>
+<h2>Constants</h2>
+Constants are those values which when declared remain fixed throughout the PL/SQL block. For declaring constants, a constant keyword is used. <br><br>
+<b><p style="font-size: large;"> Syntax:</p></b>
+Constant_Name  constant  Datatype(size) := value; <br>
+<br><b><p style="font-size: large;"> Example:</p></b>
+school_name <br>
+constant VARCHAR2(20) := "DPS";
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+            font-size: larger;
+        }
+        h3{
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        img{
+            height: 300px;
+            width: 450px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        div{
+            height: 80px;
+            width: 600px;
+            background-color: rgb(206, 200, 200);
+        }
+    </style>
+    <body>
+        
+        <nav>
+            <label class="logo"> WEB BEGINNER</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="dbms.html">DBMS</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><br><br><br><br><br><br><br><br><br><br><br>
+    
+<body style="margin-left: 10px;"><br><br>
+    <p style="font-size: 30px;"><b>Cursors:</b></p><br>
+    A cursor is a pointer to the context area. PL/SQL controls the context area through a cursor. A cursor holds the rows (one or more) returned by a SQL statement. The set of rows the cursor holds is referred to as the active set. <br>
+    There are two types of cursors: <br><br>
+    Implicit cursors <br>
+    Explicit cursors <br><br>
+    <h3>Implicit Cursors</h3><br>
+    Implicit cursors are automatically created by Oracle whenever an SQL statement is executed, when there is no explicit cursor for the statement. Programmers cannot control the implicit cursors and the information in <it class="br"></it>
+    <h3>Explicit Cursors</h3><br>
+    Explicit cursors are programmer-defined cursors for gaining more control over the context area. An explicit cursor should be defined in the declaration section of the PL/SQL Block. It is created on a SELECT Statement which returns more than one row. <br>
+    The syntax for creating an explicit cursor is <br><br>
+    CURSOR cursor_name IS select_statement; <br><br>
+    Declaring the Cursor <br>
+    Declaring the cursor defines the cursor with a name and the associated SELECT statement. <br><br>
+    Opening the Cursor <br>
+Opening the cursor allocates the memory for the cursor and makes it ready for fetching the rows returned by the SQL statement into it. 
+<br><br>
+
+Fetching the Cursor <br>
+Fetching the cursor involves accessing one row at a time. <br><br> 
+Closing the Cursor <br>
+Closing the cursor means releasing the allocated memory.  <br><br>
+Syntax<br>
+<br>
+
+CURSOR cursor_name IS query; <br><br>
+Example: <br> <img src="../Screenshot 2023-04-11 191152.png" alt="">
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+            font-size: larger;
+        }
+        h3{
+            font-size:xx-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        img{
+            height: 300px;
+            width: 450px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        div{
+            height: 80px;
+            width: 600px;
+            background-color: rgb(206, 200, 200);
+        }
+    </style>
+    <body>
+        
+        <nav>
+            <label class="logo"> WEB BEGINNER</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="dbms.html">DBMS</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><br><br><br><br><br><br><br><br><br><br><br>
+         <body style="margin-left: 10px;"> 
+       <b><p> 1. SQL WHERE Clause</p></b>
+        In MySQL, we use the SELECT statement to select data from a table in the database. Here, the WHERE clause allows filtering certain records that exactly match a specified condition. Thus, it helps us to fetch only the necessary data from the database that satisfies the given expressional conditions.<br><br>
+        
+        <b><p style="font-size: large;"> Syntax:</p></b>
+        Select column1,column from table_name WHERE [condition];<br><br>
+        <b><p style="font-size: large;"> Example:</p></b>
+<img src="../Screenshot (19).png" height="200" width="200"><br>
+        <b><p> 2. SQL ORDER BY Clause</p></b>
+The ORDER BY clause is used in SQL for sorting records. It is used to arrange the result set either in ascending or descending order. When we query using SELECT statement the result is not in an ordered form. Hence, the result rows can be sorted when we combine the SELECT statement with the ORDER BY clause. <br><br>
+
+<b><p style="font-size: large;"> Syntax:</p></b>
+SELECT column1,column FROM TableName ORDER BY column1,...,column  ASC|DESC;<br><br>
+<b><p style="font-size: large;"> Example:</p></b>
+<img src="../Screenshot (20).png" height="200" width="200"><br>
+<b><p> 3. SQL GROUP BY Clause </p></b>
+The GROUP BY clause is used to group rows that have the same values in the result set. Like if we find the names of books from the table grouped by CatID.
+<br>
+This clause is generally used with aggregate functions that allow grouping the query result rows by multiple columns. The aggregate functions are COUNT, MAX, MIN, SUM, AVG, etc.
+<br><br>
+<b><p style="font-size: large;"> Syntax:</p></b>
+
+SELECT Column FROM Table WHERE condition GROUP BY Column [ORDER BY Column];<br><br>
+<b><p style="font-size: large;"> Example:</p></b>
+<img src="../Screenshot (21).png" height="200" width="200"><br>
+<b><p>4. SQL HAVING Clause</p></b>
+Actually, this clause is introduced to apply functions in the query with the WHERE clause. In SQL, the HAVING clause was added because the WHERE clause could not be applied with aggregate functions.
+<br><br>
+<b><p style="font-size: large;"> Syntax:</p></b>
+
+SELECT Column FROM Table WHERE condition GROUP BY Column HAVING condition [ORDER BY Column];<br><br>
+<b><p style="font-size: large;"> Example:</p></b>
+<img src="../Screenshot (22).png" height="200" width="200"><br>
+</body>
+</html>
